@@ -1,0 +1,598 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans';
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    background-color: #01533f;
+    color: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo,
+header h2 {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-right: 10px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Section */
+#welcome {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 0 1rem;
+    background-image: url('images/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-image {
+    max-width: 800px;
+    height: auto;
+    margin: .5rem 0;
+}
+
+#welcome h2 {
+    color: #F2F2F2;
+    font-style: italic;
+    margin: 0 0 3rem 0;
+}
+
+#welcome .hero-content .btn {
+    display: inline-block;
+    /* Ensures scaling applies to the whole box */
+    padding: .8rem 1.5rem;
+    background: #b1d13d;
+    color: #01533f;
+    border: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    /* Adds shadow */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+#welcome .hero-content .btn:hover {
+    background-color: #b1d13d;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Slightly larger on hover */
+}
+
+/* Sections */
+section {
+    padding: 4rem 8rem;
+    text-align: center;
+    max-width: 100%
+}
+
+section h1 {
+    font-size: 2rem;
+    color: #0d0d0d;
+    margin-bottom: 2rem;
+}
+
+section p {
+    margin-bottom: 1.5rem;
+}
+
+/* About Section */
+#about {
+    background-color: #e7f0db;
+}
+
+/* Carousel Styles for Specific ID */
+#about-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    padding: 0px;
+    margin-top: 40px;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+#about-carousel .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+#about-carousel img {
+    width: 100%;
+    margin: 10px;
+    max-width: calc(600px / 2);
+    /* Adjust to show 3 images at a time */
+    flex: 0 0 calc(100% / 2);
+    /* Make each image take up a third of the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slicker button styling */
+#about-carousel .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #e7f0db;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#about-carousel .carousel-btn:hover {
+    color: #01533f;
+}
+
+#about-carousel .prev {
+    left: 10px;
+}
+
+#about-carousel .next {
+    right: 10px;
+}
+
+
+/*Exec team*/
+
+#exec-team-section {
+    background-color: #01533f;
+    display: flex;
+    justify-content: center;
+}
+
+.exec-team-section {
+    background-color: #e7f0db;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.exec-names {
+    width: 50%;
+    padding: 40px;
+}
+
+.exec-names ul {
+    list-style: none;
+    padding: 0;
+}
+
+.exec-names li {
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #01533f;
+}
+
+.exec-names li.active {
+    font-weight: bold;
+}
+
+.exec-info {
+    width: 100%;
+    padding: 20px;
+}
+
+.exec-detail {
+    display: none;
+}
+
+.exec-detail img {
+    width: 510px;
+    height: 170px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* styles.css */
+.contact-links {
+    margin: 20px;
+    width: 93%;
+    gap: 10px;
+}
+
+.contact-links a {
+    color: #0072b1;
+    /* LinkedIn color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #e1f5fe;
+    /* Light blue on hover */
+}
+
+/* Resources Section */
+#resources {
+    background-color: #e7f0db;
+}
+
+.resources-grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.resource-item {
+    background-color: #01533f;
+    color: #FFF;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    /* Adds shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
+    display: inline-block;
+    /* Ensures scaling applies to the whole box */
+}
+
+.resources-grid a {
+    text-decoration: none;
+    color: #e7f0db;
+}
+
+.resource-item:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover for the entire box */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    /* Larger shadow for lifting effect */
+}
+
+/* Events Section */
+#events {
+    background-color: #01533f;
+    padding: 4rem 8rem;
+    text-align: center;
+}
+
+#events h1 {
+    color: #e7f0db;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    background-color: #e7f0db;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 250px;
+    scroll-snap-align: start;
+    text-align: left;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+    color: #01533f;
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.carousel-item p {
+    color: #333;
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Custom scrollbar for events section */
+#events .carousel {
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #b1d13d transparent;
+    /* Firefox */
+}
+
+#events .carousel::-webkit-scrollbar {
+    height: 5px;
+    /* Scrollbar height */
+}
+
+#events .carousel::-webkit-scrollbar-track {
+    background: transparent;
+    /* Background of scrollbar */
+}
+
+#events .carousel::-webkit-scrollbar-thumb {
+    background-color: #b1d13d;
+    /* Green color for scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded edges for scrollbar */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+}
+
+/*Programs Section */
+
+#program {
+    background-color: #e7f0db;
+}
+
+#program {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 29px;
+    /* Spacing between images */
+    flex-wrap: wrap;
+    /* Allows images to wrap on smaller screens */
+}
+
+#program img {
+    width: 100px;
+    /* Set a base width */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    /* Smooth animation for scaling */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    /* Adds shadow */
+}
+
+#program img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+
+#program a {
+    text-decoration: none;
+    /* Remove link underline */
+}
+
+
+/*Join Us Section */
+
+#join {
+    background-color: #e7f0db;
+    text-align: center;
+    /* Center-aligns all content within the section */
+    padding: 40px 20px;
+}
+
+#join h1 {
+    margin-bottom: 10px;
+    /* Space between h1 and h3 */
+}
+
+#join h3 {
+    margin-bottom: 30px;
+    /* Space between h3 and the link */
+    color: #333
+}
+
+#join .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    /* Makes the text large */
+    font-weight: bold;
+    /* Makes the text bold */
+    color: #e7f0db;
+    /* Text color */
+    background-color: #01533f;
+    text-decoration: none;
+    /* Removes underline */
+    border-radius: 5px;
+    /* Rounds corners */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    /* Adds shadow */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+#join .btn:hover {
+    background-color: #01533f;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Slightly larger on hover */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #01533f;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h1 {
+    color: #e7f0db;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #e7f0db;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: 'Open Sans';
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+    border-color: #01533f;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contact button {
+    background-color: #01533f;
+    color: #e7f0db;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #contact h1 {
+        font-size: 2rem;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background: #e7f0db;
+    color: #01533f;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color: #01533f;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exec-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .exec-member img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .exec-team-section {
+    display: flex;
+    width: 70%;
+  }
+  
+  .exec-names {
+    width: 30%;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+  }
+  
+  .exec-names ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exec-names li {
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .exec-names li.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .exec-info {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .exec-detail {
+    display: none;
+  }
+  
+  .exec-detail img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  

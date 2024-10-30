@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVM Entrepreneurship Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Entrepreneurship Club Logo">
+        </div>
+        <div>
+            <h2>UVM Entrepreneurship Club</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <div class="hero-content">
+            <img src="images/full.png" alt="Welcome Image" class="welcome-image">
+            <h2>The hub of student entrepreneurship at UVM.</h2>
+            <a href="#about" class="btn">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" >
+        <h1>About Us</h1>
+        <p>The UVM Entrepreneurship Club (EClub) is a student-led organization at the University of Vermont dedicated to
+            fostering a community of aspiring entrepreneurs. Our mission is to inspire, educate, and support students
+            interested in building their own ventures or working in start-up environments.
+            Through regular workshops, guest speaker events, pitch competitions, and collaborative projects, EClub
+            provides hands-on learning experiences and valuable networking opportunities. Whether you're an innovator
+            with a new idea or just curious about entrepreneurship,
+            EClub offers a welcoming environment to explore your entrepreneurial passions and connect with like-minded
+            students!
+        </p>
+
+        <div id="about-carousel" class="carousel">
+            <button class="carousel-btn prev" onclick="prevSlide('about-carousel')">&#10094;</button>
+            <div class="carousel-track">
+                <img src="images/IMG_5908 (1).JPG" alt="Workshop Event">
+                <img src="images/IMG_9031.jpg" alt="Guest Speaker Event">
+                <img src="images/Screenshot 2024-04-30 094627.png" alt="Pitch Competition">
+                <img src="images/desktop.ini" alt="Networking Session">
+                <img src="image5.jpg" alt="Team Collaboration">
+                <img src="image5.jpg" alt="Team Collaboration">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="carousel-btn next" onclick="nextSlide('about-carousel')">&#10095;</button>
+        </div>
+
+    </section>
+
+    <!-- Executive Team Members -->
+    <section id="exec-team-section">
+        <div class="exec-team-section">
+            <div class="exec-names">
+                <ul>
+                    <li onclick="showExec('logan')">Logan Vaughan</li>
+                    <li onclick="showExec('josh')">Josh Moore</li>
+                    <li onclick="showExec('ethan')">Ethan Israel</li>
+                    <li onclick="showExec('joshW')">Josh Wallace</li>
+                    <li onclick="showExec('vikyat')">Vikyat Mulpuri</li>
+                    <li onclick="showExec('erik')">Erik Monsen</li>
+                </ul>
+            </div>
+            <div class="exec-info">
+                <div id="logan" class="exec-detail">
+                    <img src="images/logan2.png" alt="Logan Vaughan">
+                    <p>Logan Vaughan, President, leads the team with a focus on strategy and innovation...</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/loganvaughan25" id="linkedin-link"
+                            target="_blank">LinkedIn</a>
+                        <a href="mailto:logan.vaughan@uvm.edu" id="email-link">Email</a>
+                    </div>
+                </div>
+                <div id="josh" class="exec-detail">
+                    <img src="images/JoshM.png" alt="Josh Moore">
+                    <p>Josh Moore is the Vice President & Treasurer, responsible for budgeting and financial
+                        planning...</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/joshua-moore-537485251" id="linkedin-link"
+                            target="_blank">LinkedIn</a>
+                        <a href="mailto:joshua.moore@uvm.edu" id="email-link">Email</a>
+                    </div>
+                </div>
+                <div id="ethan" class="exec-detail">
+                    <img src="images/Ethan2.png" alt="Ethan Israel">
+                    <p>Ethan Israel manages operations, focusing on efficiency and process improvement...</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/ethan-israel-7182a1253" id="linkedin-link"
+                            target="_blank">LinkedIn</a>
+                        <a href="mailto:ethan.israel@uvm.edu" id="email-link">Email</a>
+                    </div>
+                </div>
+                <div id="joshW" class="exec-detail">
+                    <img src="images/JoshW2.png" alt="Josh Wallace">
+                    <p>Josh Wallace heads marketing, developing outreach strategies to grow our presence...</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/joshua-wallace-8227ab21a" id="linkedin-link"
+                            target="_blank">LinkedIn</a>
+                        <a href="mailto:joshua.wallace@uvm.edu" id="email-link">Email</a>
+                    </div>
+                </div>
+                <div id="vikyat" class="exec-detail">
+                    <img src="images/Vik2.png" alt="Vikyat Mulpuri">
+                    <p>Vikyat Mulpuri, in charge of project coordination, ensures alignment across teams...</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/vikyatmulpuri" id="linkedin-link"
+                            target="_blank">LinkedIn</a>
+                        <a href="mailto:vikyat.mulpuri@uvm.edu" id="email-link">Email</a>
+                    </div>
+                </div>
+                <div id="erik" class="exec-detail">
+                    <img src="images/Erik2.png" alt="Erik Monsen">
+                    <p>Erik Monsen is the club's faculty advisor and highly invloved entrepreneurially on campus.</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/erik-monsen-9b41791" id="linkedin-link"
+                            target="_blank">LinkedIn</a>
+                        <a href="mailto:erik.monsen@uvm.edu" id="email-link">Email</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Join Us Section -->
+    <section id="join">
+        <h1>Join Us</h1>
+        <h3>Register to be an offical member at UVM Clubs!</h3>
+        <a href="https://clubs.uvm.edu/organization/uvm_entrepreneurship_club" class="btn" target="_blank">Become a
+            Member</a>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h1>Upcoming Events</h1>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="images/image_123650291.JPG" alt="Pitch Night">
+                <h3>Pitch Night</h3>
+                <p>October 19th, 2024</p>
+                <p>6:00 PM - 7:00 PM</p>
+                <p>@ VCET</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/CIF Mixer.png" alt="Workshop">
+                <h3>CIF Mixer</h3>
+                <p>November 8, 2024</p>
+                <p>5:00 PM - 7:00 PM</p>
+                <p> Keller Room, GSB</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/event3.jpg" alt="Networking Meetup">
+                <h3>Cairn Cross</h3>
+                <p>November 12, 2024</p>
+                <p>6:00 PM - 7:00 PM</p>
+                <p>@ VCET</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/event3.jpg" alt="Networking Meetup">
+                <h3>Felipe Massa</h3>
+                <p>November 19, 2024</p>
+                <p>6:00 PM - 7:00 PM</p>
+                <p>@ VCET</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources">
+        <h1>Resources</h1>
+        <div class="resources-grid">
+            <div class="resource-item"><a href="https://www.vtsbdc.org/request/" target="_blank">VTSBDC Advising</a>
+            </div>
+            <div class="resource-item"><a href="https://guykawasaki.com/the-only-10-slides-you-need-in-your-pitch/"
+                    target="_blank">Pitch Deck Template</a></div>
+            <div class="resource-item"><a href="https://www.vtsbdc.org/resources-2/" target="_blank">VTSBDC Startup
+                    Tools</a></div>
+            <div class="resource-item"><a href="https://forms.gle/mTHuwruCwGd6pnUQ6" target="_blank">EClub Funding
+                    Request </a></div>
+        </div>
+        <div class="resources-grid">
+            <div class="resource-item"><a href="https://tax.vermont.gov/business/start-a-business" target="_blank">Step
+                    By Step</a></div>
+            <div class="resource-item"><a href="https://sos.vermont.gov/corporations/" target="_blank">VT Business
+                    Registration</a></div>
+            <div class="resource-item"><a href="https://sblc.vermontlaw.edu/" target="_blank">Free Legal Advice</a>
+            </div>
+            <div class="resource-item"><a href="https://clubs.uvm.edu/organization/uvm_entrepreneurship_club"
+                    target="_blank">UVM Clubs</a></div>
+        </div>
+        <div id="program">
+            <a href="https://generatorvt.com/" target="_blank">
+                <img src="images/Generator.jpg" alt="Programs">
+            </a>
+            <a href="https://verso.w3.uvm.edu/orca/" target="_blank">
+                <img src="images/Verso.png" alt="Programs">
+            </a>
+            <a href="https://www.uvm.edu/uvminnovations" target="_blank">
+                <img src="images/UVMInnovations.jpg" alt="Programs">
+            </a>
+            <a href="https://www.linkedin.com/company/uvmcif/" target="_blank">
+                <img src="images/CIF.jpg" alt="Programs">
+            </a>
+            <a href="https://www.uvm.edu/uvminnovations/academic-research-commercialization" target="_blank">
+                <img src="images/ARC.jpg" alt="Programs">
+            </a>
+            <a href="https://vcet.co/" target="_blank">
+                <img src="images/VCET.jpg" alt="Programs">
+            </a>
+            <a href="https://www.vtsbdc.org/" target="_blank">
+                <img src="images/VTSBDC.jpg" alt="Programs">
+            </a>
+            <a href="https://www.hulalakeside.com/" target="_blank">
+                <img src="images/Hula.jpg" alt="Programs">
+            </a>
+        </div>
+
+    </section>
+
+
+    <section id="pitchComp">
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>University of Vermont Entrepreneurship Club © 2024</p>
+        <div class="social-links">
+            <a href="#">LinkTree</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">EntrepreneurshipClub@uvm.edu</a>
+            <a href="#">Instagram</a>
+            <a href="#">GroupMe</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
