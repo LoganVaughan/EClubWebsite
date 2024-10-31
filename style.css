@@ -380,7 +380,7 @@ section p {
 #events .carousel::-webkit-scrollbar-thumb {
     background-color: #b1d13d;
     /* Green color for scrollbar thumb */
-    border-radius: 10px;
+    border-radius: 10px; 
     /* Rounded edges for scrollbar */
 }
 
