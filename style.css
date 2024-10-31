@@ -434,6 +434,77 @@ section p {
 }
 
 
+/* Pitch Competiton*/
+
+#pitchComp {
+    background-color:#01533f;
+    text-align: center;
+}
+
+#pitchComp h1 {
+    color:#e7f0db;
+    margin-bottom: 20px;
+}
+
+.competition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    background-color:#e7f0db;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.competition img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.competition h3 {
+    font-size: 1.5em;
+    color:#01533f;
+}
+
+.competition p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0 15px;
+}
+
+.competition a {
+    display: inline-block;
+    padding: 10px 20px;
+    /* Makes the text large */
+    font-weight: bold;
+    /* Makes the text bold */
+    color: #e7f0db;
+    /* Text color */
+    background-color: #01533f;
+    text-decoration: none;
+    /* Removes underline */
+    border-radius: 5px;
+    /* Rounds corners */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    /* Adds shadow */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.competition a:hover {
+    background-color: #01533f;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Slightly larger on hover */}
+
+
 /*Join Us Section */
 
 #join {
@@ -481,84 +552,104 @@ section p {
     /* Slightly larger on hover */
 }
 
-/* Contact Section */
-#contact {
-    background-color: #01533f;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Past guest spakers */
+#pastGuest {
+    background-color:#01533f;
+    text-align: center;
 }
 
-#contact h1 {
-    color: #e7f0db;
+#pastGuest h1 {
+    text-align: center;
+    color:#e7f0db;
+    margin-bottom: 10px;
+}
+
+.pastGuest-section p {
+    text-align: center;
+    font-size: 1em;
+    color:#e7f0db;
     margin-bottom: 20px;
 }
 
-#contact form {
-    width: 100%;
-    max-width: 600px;
-    background-color: #e7f0db;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+.speakers-wall {
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s ease;
-    font-family: 'Open Sans';
+.speaker {
+    background-color: #e7f0db;
+    color:#333;
+    padding: 5px;
+
+    text-align: center;
+    border-radius: 8px;
+    flex: 1 1 calc(25% - 20px); /* Adjusts each item to take 25% of the row minus gap */
+    max-width: calc(25% - 20px);
 }
 
-#contact input[type="text"]:focus,
-#contact input[type="email"]:focus,
-#contact textarea:focus {
-    border-color: #01533f;
+.speaker img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
-#contact textarea {
-    resize: vertical;
-    min-height: 150px;
+/* Contact us */
+
+#contact {
+    background-color: #e7f0db;
+    text-align: center;
+    /* Center-aligns all content within the section */
+    padding: 40px 20px;
 }
 
-#contact button {
-    background-color: #01533f;
-    color: #e7f0db;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
+#contact h1 {
+    margin-bottom: 10px;
+    /* Space between h1 and h3 */
+}
+
+#contact h3 {
+    margin-bottom: 30px;
+    /* Space between h3 and the link */
+    color: #333
+}
+
+#contact .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    /* Makes the text large */
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    /* Makes the text bold */
+    color: #e7f0db;
+    /* Text color */
+    background-color: #01533f;
+    text-decoration: none;
+    /* Removes underline */
+    border-radius: 5px;
+    /* Rounds corners */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    /* Adds shadow */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
 }
 
-@media (max-width: 768px) {
-    #contact h1 {
-        font-size: 2rem;
-    }
-
-    #contact form {
-        padding: 20px;
-    }
+#contact .btn:hover {
+    background-color: #01533f;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Slightly larger on hover */
 }
 
 
 
 /* Footer */
 footer {
-    background: #e7f0db;
-    color: #01533f;
+    background-color: #01533f;
+    color:#e7f0db;
     text-align: center;
     padding: 2rem;
 }
@@ -569,7 +660,7 @@ footer p {
 }
 
 footer a {
-    color: #01533f;
+    color:#e7f0db;
     text-decoration: none;
     margin: 10px;
 }
