@@ -60,3 +60,29 @@ function nextSlide(carouselId) {
 }
 
 window.addEventListener('resize', () => updateCarousel('about-carousel'));
+
+function showPitch(id) {
+    // Hide all exec details
+    document.querySelectorAll('.pitch-detail').forEach(detail => {
+      detail.style.display = 'none';
+    });
+  
+    // Remove 'active' class from all names
+    document.querySelectorAll('.pitch-names li').forEach(name => {
+      name.classList.remove('active');
+    });
+  
+    // Show selected exec detail
+    document.getElementById(id).style.display = 'block';
+  
+    // Add 'active' class to selected name
+    document.querySelector(`.pitch-names li[onclick="showPitch('${id}')"]`).classList.add('active');
+  }
+  
+  // Call function to show 'logan' as default
+  showPitch('meyers');
+  
+
+  const currentIndex1 = {
+    'about-carousel': 0
+};

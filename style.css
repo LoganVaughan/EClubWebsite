@@ -433,76 +433,58 @@ section p {
     /* Remove link underline */
 }
 
-
 /* Pitch Competiton*/
-
-#pitchComp {
-    background-color:#01533f;
-    text-align: center;
-}
-
-#pitchComp h1 {
-    color:#e7f0db;
-    margin-bottom: 20px;
-}
-
-.competition {
+#pitchComp-section {
+    background-color: #01533f;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0px;
+    justify-content: center;
+}
+
+.pitch-comp-section {
     background-color:#e7f0db;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1500px;
-    margin: auto;
-    margin-bottom: 20px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.competition img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.pitch-names {
+    width: 50%;
+    padding: 40px;
 }
 
-.competition h3 {
-    font-size: 1.5em;
-    color:#01533f;
+.pitch-names ul {
+    list-style: none;
+    padding: 0;
 }
 
-.competition p {
-    font-size: 1em;
-    color: #666;
-    margin: 10px 0 15px;
+.pitch-names li {
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #01533f;
 }
 
-.competition a {
-    display: inline-block;
-    padding: 10px 20px;
-    /* Makes the text large */
+.pitch-names li.active {
     font-weight: bold;
-    /* Makes the text bold */
-    color: #e7f0db;
-    /* Text color */
-    background-color: #01533f;
-    text-decoration: none;
-    /* Removes underline */
-    border-radius: 5px;
-    /* Rounds corners */
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-    /* Adds shadow */
-    transition: all 0.3s ease;
-    /* Smooth hover effect */
 }
 
-.competition a:hover {
-    background-color: #01533f;
-    /* Darker shade on hover */
-    transform: scale(1.05);
-    /* Slightly larger on hover */}
+.pitch-info {
+    width: 100%;
+    padding: 20px;
+}
+
+.pitch-detail {
+    display: none;
+}
+
+.pitch-detail img {
+    width: 510px;
+    height: 170px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
 
 /*Join Us Section */
@@ -551,6 +533,71 @@ section p {
     transform: scale(1.05);
     /* Slightly larger on hover */
 }
+/* Start ups */
+/* Start ups */
+#startUps {
+    padding: 40px;
+    background-color: #e7f0db;
+    text-align: center;
+}
+
+#startUps h1 {
+    font-size: 2em;
+    color: #2b2b2b;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Card grid container */
+.startup-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Individual startup card styling */
+.startup-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.startup-card:hover {
+    transform: scale(1.05);
+}
+
+.startup-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+.startup-name {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.startup-description {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4;
+}
+
+.startup-card:nth-child(odd) {
+    transform: rotate(-1deg);
+}
+
+.startup-card:nth-child(even) {
+    transform: rotate(1deg);
+}
+
 
 /* Past guest spakers */
 #pastGuest {

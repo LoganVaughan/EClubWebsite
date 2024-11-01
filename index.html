@@ -9,8 +9,12 @@
     <script defer src="script.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <meta name="description" content="Join the UVM Entrepreneurship Club to connect with aspiring entrepreneurs, enhance your business skills, and turn your ideas into reality. Explore events, resources, and networking opportunities to help you succeed in the entrepreneurial world.">
-    <meta name="keywords" content="UVM, Entrepreneurship Club, business skills, networking, events, entrepreneurial resources, student entrepreneurs, innovation"></head>
+    <meta name="description"
+        content="Join the UVM Entrepreneurship Club to connect with aspiring entrepreneurs, enhance your business skills, and turn your ideas into reality. Explore events, resources, and networking opportunities to help you succeed in the entrepreneurial world.">
+    <meta name="keywords"
+        content="UVM, Entrepreneurship Club, business skills, networking, events, entrepreneurial resources, student entrepreneurs, innovation">
+</head>
+
 <body>
 
     <!-- Header -->
@@ -43,7 +47,7 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" >
+    <section id="about">
         <h1>About Us</h1>
         <p>The UVM Entrepreneurship Club (EClub) is a student-led organization at the University of Vermont dedicated to
             fostering a community of aspiring entrepreneurs. Our mission is to inspire, educate, and support students
@@ -241,36 +245,79 @@
 
     <section id="pitchComp">
         <h1>UVM Pitch Competitions</h1>
-
-        <div class="competition">
-            <img src="images/20240425_JoyAndJerryMeyersCupFinal_Winners_PaintingPurpose_1800x850.jpg" alt="Joy and Jerry Meyers Cup">
-            <h3>Joy and Jerry Meyers Cup</h3>
-            <p>The Joy and Jerry Meyers Cup is an annual initiative to help fund the businesses of outstanding undergraduate entrepreneurs at The University of Vermont. The goal of this competition is to select, mentor, and finance UVM undergraduate entrepreneurs to create new Vermont-based business ventures, which profitably contribute to the greater economic, social, and environmental fabric of Vermont. 
-                The grand prize winner will receive $225,000 in cash plus in-kind services from local organizations including dedicated desk space at a local entrepreneurial co-working space as well as pro bono accounting, legal, and business development services. </p>
-            <a href="https://www.uvm.edu/uvminnovations/joy-and-jerry-meyers-cup" target="_blank">Learn More</a>
-        </div>
-    
-        <div class="competition">
-            <img src="images/allfinalists-1024x683.jpg" alt="Vermont Pitch Challenge">
-            <h3>Vermont Pitch Challenge</h3>
-            <p>The Vermont Pitch Challenge gives high school entrepreneurs from across the globe the chance to pitch innovative businesses that make a difference in their communities, all while competing for cash prizes and scholarships to the University of Vermont.
-                In teams of one to three, high school students will develop business plans that provide economic development to their communities or help the greater good.</p>
-            <a href="https://www.uvm.edu/admissions/vermont-pitch-challenge" target="_blank">Learn More</a>
-        </div>
-    
-        <div class="competition">
-            <img src="images/2024_bpc_nicogabby-48.jpg" alt="UVM Business Pitch Competition">
-            <h3>UVM Business Pitch Competition</h3>
-            <p>University of Vermont (UVM) students who have innovative and impactful plans to start and grow either a business or a mission-driven organization are invited to apply. 
-                The presentation and pitch must demonstrate a viable business solution and plan that addresses an existing consumer need, or can create one, identifies a target market, and outlines the operational and management plan for success. The winning business teams walk away with cash prizes.
-            </p>
-            <a href="https://www.uvm.edu/business/business-pitch-competition" target="_blank">Learn More</a>
+        <div class="pitch-comp-section">
+            <div class="pitch-info">
+                <div id="meyers" class="pitch-detail">
+                    <img src="images/20240425_JoyAndJerryMeyersCupFinal_Winners_PaintingPurpose_1800x850.jpg" alt="Vermont Pitch Challenge">
+                    <h3>Vermont Pitch Challenge</h3>
+                    <p>The Vermont Pitch Challenge gives high school entrepreneurs from across the globe the chance to
+                        pitch innovative businesses that make a difference in their communities, all while competing for
+                        cash prizes and scholarships to the University of Vermont.
+                        In teams of one to three, high school students will develop business plans that provide economic
+                        development to their communities or help the greater good.</p>
+                    <a href="https://www.uvm.edu/admissions/vermont-pitch-challenge" target="_blank">Learn More</a>
+                </div>
+                <div id="challenge" class="pitch-detail">
+                    <img src="images/allfinalists-1024x683.jpg" alt="Vermont Pitch Challenge">
+                    <h3>Vermont Pitch Challenge</h3>
+                    <p>The Vermont Pitch Challenge gives high school entrepreneurs from across the globe the chance to
+                        pitch innovative businesses that make a difference in their communities, all while competing for
+                        cash prizes and scholarships to the University of Vermont.
+                        In teams of one to three, high school students will develop business plans that provide economic
+                        development to their communities or help the greater good.</p>
+                    <a href="https://www.uvm.edu/admissions/vermont-pitch-challenge" target="_blank">Learn More</a>
+                </div>
+                <div id="comp" class="pitch-detail">
+                    <img src="images/2024_bpc_nicogabby-48.jpg" alt="Vermont Pitch Challenge">
+                    <h3>UVM Business Pitch Competition</h3>
+                    <p>University of Vermont (UVM) students who have innovative and impactful plans to start and grow
+                        either a business or a mission-driven organization are invited to apply.
+                        The presentation and pitch must demonstrate a viable business solution and plan that addresses
+                        an existing consumer need, or can create one, identifies a target market, and outlines the
+                        operational and management plan for success. The winning business teams walk away with cash
+                        prizes.
+                    </p>
+                    <a href="https://www.uvm.edu/business/business-pitch-competition" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="pitch-names">
+                <ul>
+                    <li onclick="showPitch('meyers')">Joy and Jerry Meyers Cup</li>
+                    <li onclick="showPitch('challenge')">Vermont Pitch Challenge</li>
+                    <li onclick="showPitch('comp')">UVM Business Pitch Competition</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="startUps">
-
+        <div>
+            <h1>Start Up's From Present and Past EClub Members!</h1>
+        </div>
+        <div class="startup-card-container">
+            <div class="startup-card">
+                <img src="logo1.png" alt="Startup Logo 1" class="startup-logo">
+                <h3 class="startup-name">Startup Name 1</h3>
+                <p class="startup-description">Brief description about this startup, what they do, and how they're
+                    innovating in their space.</p>
+            </div>
+            <div class="startup-card">
+                <img src="logo2.png" alt="Startup Logo 2" class="startup-logo">
+                <h3 class="startup-name">Startup Name 2</h3>
+                <p class="startup-description">A little about this startup and their unique approach to solving problems
+                    in their industry.</p>
+            </div>
+            <div class="startup-card">
+                <img src="logo3.png" alt="Startup Logo 3" class="startup-logo">
+                <h3 class="startup-name">Startup Name 3</h3>
+                <p class="startup-description">This startup's mission, focus, and how they emerged from the
+                    Entrepreneurship Club.</p>
+            </div>
+            <!-- Additional startup cards -->
+        </div>
     </section>
+
+
 
     <section id="pastGuest">
         <h1>Past EClub Guest Speakers!</h1>
@@ -342,7 +389,7 @@
             <a href="#">LinkedIn</a>
             <a href="#">EntrepreneurshipClub@uvm.edu</a>
             <a href="#">Instagram</a>
-            <a href="#">GroupMe</a> 
+            <a href="#">GroupMe</a>
         </div>
     </footer>
 
