@@ -665,21 +665,20 @@ transform: scale(1.05);
 #pastGuest h1 {
     text-align: center;
     color:#e7f0db;
-    margin-bottom: 10px;
 }
 
 .pastGuest-section p {
     text-align: center;
     font-size: 1em;
     color:#e7f0db;
-    margin-bottom: 20px;
+    margin:0px;
+    padding: 0px;
 }
 
 .speakers-wall {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin: 20px;
 }
 
 .speaker {
@@ -687,15 +686,16 @@ transform: scale(1.05);
     color:#333;
     padding: 5px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 5px;
     flex: 1 1 calc(25% - 20px); /* Adjusts each item to take 25% of the row minus gap */
     max-width: calc(25% - 20px);
 }
 
+
 .speaker img {
-    max-width: 100%;
+    margin-top: 10px;
+    max-width: 50%;
     border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 /* Contact us */
